@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- JSON-LD -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Muhamad Furqon Alfabiansyah",
+        "alternateName": "Furqonisme",
+        "slogan": "Ad Maiora Natus Sum",
+        "birthDate": "2003-01-13",
+        "birthPlace": "Serang, Banten, Indonesia",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Kopo",
+          "addressLocality": "Serang",
+          "addressRegion": "Banten",
+          "addressCountry": "Indonesia"
+        },
+        "gender": "Male",
+        "religion": "Islam",
+        "nationality": "Indonesian",
+        "maritalStatus": "Single",
+        "alumniOf": [
+          {
+            "@type": "EducationalOrganization",
+            "name": "SDN Nanggung 2",
+            "startDate": "2009",
+            "endDate": "2015"
+          },
+          {
+            "@type": "EducationalOrganization",
+            "name": "MTS Darrul Hikmah",
+            "startDate": "2015",
+            "endDate": "2018"
+          },
+          {
+            "@type": "EducationalOrganization",
+            "name": "SMK Hikmatul Iman",
+            "startDate": "2018",
+            "endDate": "2021"
+          }
+        ],
+        "worksFor": [
+          {
+            "@type": "Organization",
+            "name": "BPS",
+            "roleName": "Petugas Lapangan"
+          }
+        ],
+        "memberOf": [
+          {
+            "@type": "Organization",
+            "name": "PMII (Pergerakan Mahasiswa Islam Indonesia)"
+          },
+          {
+            "@type": "Organization",
+            "name": "HIMAKOM (Himpunan Mahasiswa Komputer)"
+          }
+        ],
+        "knowsAbout": [
+          "Leadership",
+          "Collaboration"
+        ],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+62-814-0064-7397",
+          "email": "furqonisme130103@gmail.com",
+          "url": "https://www.reallygreatsite.com",
+          "sameAs": [
+            "https://www.instagram.com/furqonismee"
+          ]
+        },
+        "hobby": [
+          "Travelling",
+          "Watching One Piece"
+        ]
+      }
+      </script>
+      
+    <style>
+        /* Body Styling */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            position: relative; /* Untuk memastikan overlay bekerja */
+        }
+
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('4e0cfd6cf7c387a2653f39a546a01ac4.jpg'); /* Path gambar */
+            background-size: cover;
+            background-position: center;
+            filter: blur(3px); /* Menambahkan efek blur */
+            z-index: -1; /* Mengirim overlay ke belakang */
+        }
+
+        /* Sidebar Styling */
+        .sidebar {
+            width: 250px;
+            min-height: 100vh;
+            background-color: rgba(0, 0, 0, 0.7); /* Background semi-transparan */
+            padding: 20px;
+        }
+
+        .sidebar img {
+            max-width: 100%;
+            border: 3px solid white;
+            border-radius: 50%;
+        }
+
+        .sidebar h3, .sidebar p, .sidebar a, .sidebar .social-links a {
+            color: white; /* Warna teks putih */
+        }
+
+        .sidebar a {
+            text-decoration: none;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .sidebar a:hover {
+            color: #ddd; /* Warna lebih terang saat hover */
+        }
+
+        .small-text {
+            font-size: 1rem; /* Ukuran teks kecil */
+        }
+
+        /* Main Content Styling */
+        .content {
+            flex: 1;
+            position: relative; /* Membuat konten tetap di atas background */
+            z-index: 1;
+            color: white; /* Warna teks putih */
+        }
+
+        h1 {
+            font-size: 3rem;
+        }
+
+        p {
+            font-size: 1.5rem;
+        }
+
+        /* Gallery Styling */
+        .card img {
+            border-radius: 5px;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.1); /* Transparansi kartu */
+            border: none;
+        }
+
+        .section {
+          color: white;
+        }
+    .card-img-container {
+        position: relative;
+        width: 100%;
+        height: 250px; /* Menyelaraskan tinggi semua gambar */
+        overflow: hidden; /* Memastikan gambar yang lebih besar tidak keluar area */
+    }
+
+    .card-img-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Membuat gambar sesuai proporsi tanpa distorsi */
+    }
+</style>
+</head>
+<body>
+    <div class="d-flex">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="text-center">
+                <img src="Gambar WhatsApp 2024-12-07 pukul 01.28.39_0ca941f6.jpg" alt="Foto Profil" class="mb-3" width="100">
+                <h3 class="mb-0">Furqonisme</h3><hr>
+                <p class="text-muted- small-text"><i>"Ad Maiora Natus Sum"</i></p><hr>
+            </div>
+            <section class="section">
+              <h2>Data Pribadi</h2>
+              <ul>
+                <li><strong>Nama Lengkap</strong>: Muhamad Furqon Alfabiansyah</li>
+                  <li><strong>Tempat, Tanggal Lahir</strong>: Serang, 13 Januari 2003</li>
+                  <li><strong>Alamat</strong>: Kopo, Serang-Banten</li>
+                  <li><strong>Jenis Kelamin</strong>: Laki-laki</li>
+                  <li><strong>Agama</strong>: Islam</li>
+                  <li><strong>Kewarganegaraan</strong>: Indonesia</li>
+                  <li><strong>Status</strong>: Belum Menikah</li>
+              </ul>
+          </section>
+  
+          <section class="section">
+              <h2>Pendidikan</h2>
+              <ul>
+                  <li><strong>SDN Nanggung 2.</strong> (2009-2015)</li>
+                  <li><strong>MTS Darrul Hikmah.</strong> (2015-2018)</li>
+                  <li><strong>SMK HiKMATUL Iman.</strong> (2018-2021)</li>
+              </ul>
+          </section>
+  
+          <section class="section">
+              <h2>Pengalaman</h2>
+              <ul>
+                  <li><strong>Kerja</strong>
+                      <ul>
+                          <li>Petugas lapangan (BPS).</li>
+                      </ul>
+                  </li>
+                  <li><strong>Organisasi</strong>
+                      <ul>
+                          <li>PMII (Pergerakan Mahasiswa Islam Indonesia).</li>
+                          <li>HIMAKOM (Himpunan Mahasiswa Komputer).</li>
+                      </ul>
+                  </li>
+              </ul>
+          </section>
+  
+          <section class="section">
+              <h2>Keahlian</h2>
+              <ul>
+                  <li>Kepemimpinan</li>
+                  <li>Kolaborasi</li>
+              </ul>
+          </section>
+  
+          <section class="section">
+              <h2>Kontak</h2>
+              <ul>
+                  <li><strong>Telepon</strong>: +62 814-0064-7397</li>
+                  <li><strong>Email</strong>: furqonisme130103 <br>@gmail.com</li>
+                  <li><strong>Instagram</strong>: @furqonismee</li>
+                  <li><strong>Website</strong>: <a href="http://www.reallygreatsite.com">www.reallygreatsite.com</a></li>
+              </ul>
+          </section>
+  
+          <section class="section">
+              <h2>Hobi</h2>
+              <ul>
+                  <li>Travelling</li>
+                  <li>Nonton One Piece</li>
+              </ul>
+          </section>
+        </div>
+
+        <!-- Main Content -->
+        <div class="content p-5">
+            <!-- Home Section -->
+            <section id="home" class="d-flex align-items-center" style="min-height: 100vh;">
+                <div>
+                    <h1>Furqonisme</h1>
+                    <p>This Is My Web</p>
+                </div>
+            </section>
+
+            <!-- Gallery Section -->
+            <!-- Gallery Section -->
+<!-- Gallery Section -->
+<!-- Gallery Section -->
+<section id="gallery" class="mt-5">
+  <h2 class="text-center mb-4">My Gallery</h2>
+  <div class="row g-3">
+      <!-- Photo 1 -->
+      <div class="col-sm-6 col-md-4">
+          <div class="card border-0">
+              <div class="card-img-container">
+                  <img src="Gambar WhatsApp 2024-12-08 pukul 17.22.58_2c3cfae3.jpg" class="img-fluid" alt="Foto 1">
+              </div>
+          </div>
+      </div>
+      <!-- Photo 2 -->
+      <div class="col-sm-6 col-md-4">
+          <div class="card border-0">
+              <div class="card-img-container">
+                  <img src="IMG-20240728-WA0086.jpg" class="img-fluid" alt="Foto 2">
+              </div>
+          </div>
+      </div>
+      <!-- Photo 3 -->
+      <div class="col-sm-6 col-md-4">
+          <div class="card border-0">
+              <div class="card-img-container">
+                  <img src="Gambar WhatsApp 2024-12-08 pukul 17.22.59_3bfd25a9.jpg" class="img-fluid" alt="Foto 3">
+              </div>
+          </div>
+      </div>
+      <!-- Photo 4 -->
+      <div class="col-sm-6 col-md-6">
+          <div class="card border-0">
+              <div class="card-img-container">
+                  <img src="Gambar WhatsApp 2024-12-08 pukul 17.23.00_4a794c18.jpg" class="img-fluid" alt="Foto 4">
+              </div>
+          </div>
+      </div>
+      <!-- Photo 5 -->
+      <div class="col-sm-6 col-md-6">
+          <div class="card border-0">
+              <div class="card-img-container">
+                  <img src="Gambar WhatsApp 2024-12-08 pukul 17.23.00_fc2eb471.jpg" class="img-fluid" alt="Foto 5">
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+
+        </div>
+    </div>
+</body>
+</html>
